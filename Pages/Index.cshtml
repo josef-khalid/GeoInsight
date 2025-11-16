@@ -1,0 +1,277 @@
+@page
+@model IndexModel
+@using System.Linq
+@{
+    ViewData["Title"] = "GeoInsight - Väder & Landinfo + Crypto";
+}
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .search-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        .form-inline {
+            display: flex;
+            gap: 10px;
+        }
+
+        .form-inline input {
+            flex: 1;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            transition: border-color 0.3s;
+        }
+
+        .form-inline input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-inline button {
+            padding: 12px 30px;
+            font-size: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+
+        .form-inline button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .form-inline button:active {
+            transform: translateY(0);
+        }
+
+        .error {
+            background: #ff6b6b;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .result-container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .result-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .result-header h2 {
+            color: #333;
+            font-size: 1.8em;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .card p {
+            margin: 10px 0;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .card .label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .weather-card {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        .country-card {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+
+        .crypto-card {
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+        }
+
+        .price {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .temperature {
+            font-size: 2em;
+            font-weight: 700;
+            color: #ff6b6b;
+        }
+
+        .population {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 GeoInsight</h1>
+
+        <div class="search-box">
+            <form method="post" class="form-inline">
+                <input type="text" name="Query" id="Query" value="@Model.Query" placeholder="Skriv stad eller land (ex: Stockholm, Sverige)" />
+                <button type="submit">Sök</button>
+            </form>
+            @if (!ViewData.ModelState.IsValid && ViewData.ModelState.Values.Any(v => v.Errors.Count > 0))
+            {
+                <div class="error" style="margin-top: 10px;">
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors).DistinctBy(e => e.ErrorMessage))
+                    {
+                        <p>@error.ErrorMessage</p>
+                    }
+                </div>
+            }
+        </div>
+
+        @if (Model.Result != null)
+        {
+            if (!string.IsNullOrEmpty(Model.Result.Error))
+            {
+                <div class="error">@Model.Result.Error</div>
+            }
+            else
+            {
+                <div class="result-container">
+                    <div class="result-header">
+                        <h2>Resultat för: @Model.Result.Query</h2>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card weather-card">
+                            <h3>🌤️ Väder</h3>
+                            @if (Model.Result.Weather != null)
+                            {
+                                <p><span class="temperature">@Model.Result.Weather.TemperatureC.ToString("F1")°C</span></p>
+                                <p><span class="label">Vindhastighet:</span> @Model.Result.Weather.WindSpeedKph.ToString("F1") km/h</p>
+                                <p><span class="label">Luftfuktighet:</span> @Model.Result.Weather.HumidityPercent.ToString("F0")%</p>
+                                @if (!string.IsNullOrEmpty(Model.Result.Weather.WeatherDescription))
+                                {
+                                    <p><span class="label">Beskrivning:</span> @Model.Result.Weather.WeatherDescription</p>
+                                }
+                            }
+                            else
+                            {
+                                <p>Väderdata kunde inte hämtas för denna plats.</p>
+                            }
+                        </div>
+
+                        <div class="card country-card">
+                            <h3>🏛️ Landinformation</h3>
+                            @if (Model.Result.Country != null)
+                            {
+                                <p><span class="label">Land:</span> @Model.Result.Country.Name</p>
+                                @if (!string.IsNullOrEmpty(Model.Result.Country.Capital))
+                                {
+                                    <p><span class="label">Huvudstad:</span> @Model.Result.Country.Capital</p>
+                                }
+                                <p><span class="label">Befolkning:</span> <span class="population">@Model.Result.Country.Population.ToString("N0")</span></p>
+                                <p><span class="label">Yta:</span> @Model.Result.Country.Area.ToString("N0") km²</p>
+                                @if (!string.IsNullOrEmpty(Model.Result.Country.CurrencyCode))
+                                {
+                                    <p><span class="label">Valuta:</span> @Model.Result.Country.CurrencyCode.ToUpper()</p>
+                                }
+                                @if (Model.Result.Country.Languages != null && Model.Result.Country.Languages.Any())
+                                {
+                                    <p><span class="label">Språk:</span> @string.Join(", ", Model.Result.Country.Languages)</p>
+                                }
+                            }
+                        </div>
+
+                        <div class="card crypto-card">
+                            <h3>₿ Kryptopriser</h3>
+                            @if (Model.Result.Crypto != null)
+                            {
+                                <p><span class="label">Valuta:</span> @Model.Result.Crypto.VsCurrency.ToUpper()</p>
+                                <p><span class="label">Bitcoin (BTC):</span> <span class="price">@Model.Result.Crypto.BitcoinPrice.ToString("N2")</span></p>
+                                <p><span class="label">Ethereum (ETH):</span> <span class="price">@Model.Result.Crypto.EthereumPrice.ToString("N2")</span></p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>
