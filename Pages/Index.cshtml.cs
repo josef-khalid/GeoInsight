@@ -3,6 +3,7 @@ using GeoInsight.Business;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
+using System.Threading.Tasks;
 
 [IgnoreAntiforgeryToken]
 public class IndexModel : PageModel
