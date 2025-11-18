@@ -1,0 +1,59 @@
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\bin\Debug\net9.0\appsettings.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.staticwebassets.endpoints.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.exe
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.deps.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.runtimeconfig.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.dll
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.pdb
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.AssemblyInfoInputs.cache
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.AssemblyInfo.cs
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.csproj.CoreCompileInputs.cache
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.RazorAssemblyInfo.cache
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.RazorAssemblyInfo.cs
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.sourcelink.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\scopedcss\bundle\GeoInsight.styles.css
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.dll
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\refint\GeoInsight.dll
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.pdb
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.genruntimeconfig.cache
+C:\Users\Yousi\Desktop\Schol project\GeoInsight\obj\Debug\net9.0\ref\GeoInsight.dll
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\bin\Debug\net9.0\appsettings.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.staticwebassets.endpoints.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.exe
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.deps.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.runtimeconfig.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.dll
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\bin\Debug\net9.0\GeoInsight.pdb
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.AssemblyInfoInputs.cache
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.AssemblyInfo.cs
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.csproj.CoreCompileInputs.cache
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.RazorAssemblyInfo.cache
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.RazorAssemblyInfo.cs
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.sourcelink.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\scopedcss\bundle\GeoInsight.styles.css
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.dll
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\refint\GeoInsight.dll
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.pdb
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\GeoInsight.genruntimeconfig.cache
+C:\Users\ayham\OneDrive\Desktop\Schol project\Schol project\GeoInsight\obj\Debug\net9.0\ref\GeoInsight.dll
