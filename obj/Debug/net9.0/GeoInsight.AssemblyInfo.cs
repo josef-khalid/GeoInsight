@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeoInsight")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ffffd5c4f336aa3f077d458af401671f065d713")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2fe3de8271dd16479ffca0fb8521c82e5ec633e")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeoInsight")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeoInsight")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
